@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>HACKED BY SEVENTEEN</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            min-height: 100vh;
+            cursor: pointer; /* لتوضيح أن الصفحة قابلة للضغط */
+        }
+
+        /* طبقة تظهر في البداية لإجبار المستخدم على التفاعل */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            color: #00ff41; /* لون أخضر تيرمينال للرسالة */
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* تنسيق الصورة مع الإطار الأبيض الأصلي */
+        .profile-img {
+            border: 2px solid white; /* إطار أبيض واضح */
+            padding: 5px;
+            width: 450px;
+            max-width: 90%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .main-title {
+            font-family: sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            margin: 30px 0;
+            text-transform: uppercase;
+        }
+
+        .terminal-box {
+            border: 1px solid #333;
+            border-radius: 10px;
+            background-color: rgba(10, 10, 10, 0.9);
+            width: 600px;
+            max-width: 95%;
+            padding: 20px;
+            text-align: left;
+            direction: ltr;
+        }
+
+        .terminal-header {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .terminal-prompt {
+            color: #bbb;
+            margin-bottom: 10px;
+        }
+
+        .terminal-prompt span {
+            color: #888;
+        }
+
+        /* نص الرسالة باللون الأخضر الأصلي */
+        .message-content {
+            color: #00ff41; /* أخضر التيرمينال الأصلي */
+            text-align: right;
+            direction: rtl;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .audio-player {
+            display: none;
+        }
+    </style>
+</head>
+<body onclick="playAudio()">
+
+    <div id="overlay">
+        [ ليه يا عيال القحبه تغلطون على فحلكم  ]
+    </div>
+
+    <img src="https://cdn.discordapp.com/attachments/1264739192953376779/1487222087448793228/download.gif?ex=69c85b00&is=69c70980&hm=b666f3d2ec11b09f5f61d158b51b8e6cca5cb2e2b87fee553a1e0d05502888a5&size=1030" class="profile-img" alt="Itachi">
+
+    <div class="main-title">HACKED BY SEVENTEEN</div>
+
+    <div class="terminal-box">
+        <div class="terminal-header">ooo discord.gg/860</div>
+        
+        <div class="terminal-prompt">
+            mystery@system:~$ <span>why?</span>
+        </div>
+
+        <div class="message-content">
+            السلام عليكم ورحمة الله وبركاته : SEVENTEEN <br>
+            عدلو سيرفركم المخصي يرحم والدينكم ازبل هاك اقدر اشغله فيه <br>
+            السيرفر فار تجارب عندي اي شي ابغا اجربه اجي عندك <br>
+            و حاطين ريسبكت الاساسي زبي عليكم واحد واحد <br>
+            اداره فاشله قوانين فاشله ايش تبون بعد تفو عليكم بس <br>
+            #السيرفر_مليان_ثغرات
+        </div>
+    </div>
+
+    <audio id="bgAudio" loop class="audio-player">
+        <source src="https://i.top4top.io/m_3738qp6581.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("bgAudio");
+            audio.play().catch(function(error) {
+                console.log("Audio play failed: ", error);
+            });
+            
+            // إخفاء رسالة التنبيه
+            var overlay = document.getElementById("overlay");
+            overlay.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
